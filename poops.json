@@ -1,7 +1,7 @@
 {
   "scripts": [{
     "in": "src/scripts/script.js",
-    "out": "dist/script.js",
+    "out": "dist/scripts/script.js",
     "options": {
       "sourcemap": true,
       "minify": true,
@@ -12,7 +12,7 @@
   }],
   "styles": [{
     "in": "src/styles/site.scss",
-    "out": "dist/site.css",
+    "out": "dist/styles/site.css",
     "options": {
       "sourcemap": true,
       "minify": true,
@@ -21,16 +21,22 @@
   },
   {
     "in": "src/styles/index.scss",
-    "out": "dist/style.css",
+    "out": "dist/styles/style.css",
     "options": {
       "sourcemap": true,
       "minify": true,
       "justMinified": false
     }
   }],
+  "copy": [
+    {
+      "in": "src/static",
+      "out": "dist"
+    }
+  ],
   "markup": {
     "in": "src/markup",
-    "out": "/",
+    "out": "dist",
     "options": {
       "site": {
         "title": "💩🌪️ Shitstorm",
@@ -50,7 +56,7 @@
   "banner": "/* {{ name }} v{{ version }} | {{ homepage }} | {{ license }} License */",
   "serve" : {
     "port": 4040,
-    "base": "/"
+    "base": "/dist"
   },
   "livereload": true,
   "watch": [
