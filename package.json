@@ -25,10 +25,10 @@
     "build": "poops -b"
   },
   "devDependencies": {
-    "poops": "^1.0.20"
+    "poops": "^1.2.0"
   },
   "dependencies": {
-    "book-of-spells": "^1.0.31",
+    "book-of-spells": "^1.1.1",
     "sulphuris": "^2.0.1"
   }
 }
