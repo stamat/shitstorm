@@ -11,15 +11,6 @@
     }
   }],
   "styles": [{
-    "in": "src/styles/site.scss",
-    "out": "dist/styles/site.css",
-    "options": {
-      "sourcemap": true,
-      "minify": true,
-      "justMinified": false
-    }
-  },
-  {
     "in": "src/styles/index.scss",
     "out": "dist/styles/style.css",
     "options": {

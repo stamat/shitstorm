@@ -10,8 +10,6 @@ A small [Poops](https://github.com/stamat/poops/) template for static sites with
 | Build tool | `poops` (`npm run dev`, `npm run build`) |
 | Scripts | ES modules from `src/scripts/script.js` |
 | Styles | SCSS entry points in `src/styles/` |
-| CSS framework | [`sulphuris`](https://www.npmjs.com/package/sulphuris) |
-| JS helpers | [`book-of-spells`](https://www.npmjs.com/package/book-of-spells) |
 | Markup | Markdown content + layout templating in `src/markup/` |
 | Data | YAML data files (example: `src/markup/_data/fonts.yaml`) |
 | Static assets | Copied from `src/static` to `dist` |
@@ -27,7 +25,7 @@ A small [Poops](https://github.com/stamat/poops/) template for static sites with
 src/
   markup/     # pages, layouts, data
   scripts/    # JavaScript entry points
-  styles/     # SCSS entry points and config
+  styles/     # SCSS entry point
   static/     # copied as-is to dist
 dist/         # generated output
 poops.json    # build + serve config

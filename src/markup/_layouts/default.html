@@ -30,7 +30,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   {% endif %}   
-  <link rel="stylesheet" href="{{ relativePathPrefix }}styles/site.min.css">
   <link rel="stylesheet" href="{{ relativePathPrefix }}styles/style.min.css">
 
   {% if fontparts.length != 0 %}
@@ -40,8 +39,8 @@
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 </head>
-<body class="bg-brownish">
-  <div class="container">
+<body>
+  <div>
     {% block content %} {% endblock %}
   </div>
   <script>hljs.highlightAll();</script>
