@@ -16,6 +16,9 @@ A small [Poops](https://github.com/stamat/poops/) template for static sites with
 | Data | YAML data files (example: `src/markup/_data/fonts.yaml`) |
 | Static assets | Copied from `src/static` to `dist` |
 | Dev UX | Local server on port `4040` + live reload |
+| Lint | ESLint (JS) + Stylelint (SCSS) |
+| Tests | Jest (`npm test`) |
+| CI | GitHub Actions — lint + test on push/PR, deploy on `main` |
 | Output | Built site in `dist/` with minified assets + source maps |
 
 ## Project structure
@@ -42,3 +45,12 @@ Build for production:
 ```bash
 npm run build
 ```
+
+## Checks
+
+```bash
+npm run lint   # ESLint (JS) + Stylelint (SCSS)
+npm test       # Jest — builds and asserts dist/ output
+```
+
+CI runs both on every push and pull request ([`.github/workflows/ci.yml`](.github/workflows/ci.yml)); pushes to `main` also deploy to GitHub Pages ([`.github/workflows/pages.yml`](.github/workflows/pages.yml)).
