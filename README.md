@@ -4,6 +4,8 @@ A small [Poops](https://github.com/stamat/poops/) template for static sites with
 
 ## Scaffold a new project
 
+Requires Node.js and **git** (both scaffolders shell out to `git`).
+
 ```bash
 npm create poops@latest my-app
 ```
