@@ -13,8 +13,8 @@ This uses [`create-poops`](https://github.com/stamat/create-poops) to pull the l
 | Template    | Ships with                                |
 | ----------- | ----------------------------------------- |
 | `base`      | this repo — clean poops starter           |
-| `sulphuris` | + sulphuris CSS framework, book-of-spells |
-| `hat`       | + htmx, Alpine.js, Tailwind               |
+| [`sulphuris`](https://github.com/stamat/shitstorm-sulphuris) | + sulphuris CSS framework, book-of-spells |
+| [`hat`](https://github.com/stamat/shitstorm-hat)       | + htmx, Alpine.js, Tailwind               |
 
 ```bash
 npm create poops my-app base
