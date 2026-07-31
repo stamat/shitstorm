@@ -24,17 +24,21 @@
     "dev": "poops",
     "build": "poops -b",
     "lint": "eslint . && stylelint \"src/**/*.scss\"",
-    "test": "jest"
+    "test": "jest",
+    "lint:es": "es-check es2020 \"dist/scripts/*.js\"",
+    "lint:browsers": "stylelint --config stylelint.browsers.config.mjs --max-warnings 0 \"dist/styles/style.css\""
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@jest/globals": "^30.2.0",
+    "es-check": "^9.6.4",
     "eslint": "^10.7.0",
     "globals": "^17.7.0",
     "jest": "^30.4.2",
     "poops": "^2.0.0",
     "stylelint": "^17.14.1",
-    "stylelint-config-standard-scss": "^17.0.0"
+    "stylelint-config-standard-scss": "^17.0.0",
+    "stylelint-no-unsupported-browser-features": "^8.1.1"
   },
   "overrides": {
     "minimatch": ">=10.2.1"
